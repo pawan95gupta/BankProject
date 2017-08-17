@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Homepage</title>
+<br /><br /><br /><br />
+<h1><b><center>Welcome to The Online Banking</center></b></h1>
+<br /><br /><br />
+<script>
+        function register(){
+			alert("WELCOME TO THE OUR BRANCH");
+              
+			 document.homepage.action="Register.html";
+			 document.homepage.submit();  
+		}
+
+</script>
+</head>
+
+<body  bgcolor="#99CC66">
+<form name="homepage" action="Homepage">
+<center>
+Username:<input type="text" name="username"></input><br /><br /><br />
+Password:<input type="password" name="password"></input><br /><br /><br />
+
+<input type="submit" value="SIGN IN" ></input>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="REGISTER"  onclick="register()"></input>
+</center>
+</form>
+
+
+</body>
+</html>

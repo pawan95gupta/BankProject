@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>BANKK</display-name>
+		<context-param>
+	<param-name>driver</param-name>
+	<param-value>com.mysql.jdbc.Driver</param-value>	
+	</context-param>
+	
+	<context-param>
+	<param-name>url</param-name>
+	<param-value>jdbc:mysql://localhost:3306/banking</param-value>	
+	</context-param>
+	
+	<context-param>
+	<param-name>user</param-name>
+	<param-value>root</param-value>	
+	</context-param>
+	
+	<context-param>
+	<param-name>pass</param-name>
+	<param-value>root</param-value>	
+	</context-param>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>Homepage</display-name>
+		<servlet-name>Homepage</servlet-name>
+		<servlet-class>
+		Homepage</servlet-class>
+	
+	<init-param>
+			<param-name>username</param-name>
+			<param-value>rohan</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>321</param-value>
+		</init-param>
+
+
+	</servlet>
+	<servlet>
+		<servlet-name>Register</servlet-name>
+	    <servlet-class>Register</servlet-class>
+	</servlet>
+	
+	<servlet>
+		 <servlet-name>acopen</servlet-name>
+		<servlet-class>acopen</servlet-class>
+	</servlet>
+	<servlet>
+		 <servlet-name>deposit</servlet-name>
+		<servlet-class>deposit</servlet-class>
+	</servlet>
+	
+	<servlet>
+		 <servlet-name>withdrawl</servlet-name>
+		<servlet-class>withdrawl</servlet-class>
+		</servlet>
+	
+	<servlet>
+		 <servlet-name>transfer</servlet-name>
+		<servlet-class>transfer</servlet-class>
+	</servlet>
+	
+	<servlet>
+		 <servlet-name>Accountinfo</servlet-name>
+		<servlet-class>Accountinfo</servlet-class>
+	</servlet>
+	
+	<servlet>
+	  	<servlet-name>close</servlet-name>
+		<servlet-class>close</servlet-class>
+	</servlet>
+	
+	  <servlet-mapping>
+		<servlet-name>Homepage</servlet-name>
+		<url-pattern>/Homepage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>acopen</servlet-name>
+		<url-pattern>/acopen</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>deposit</servlet-name>
+		<url-pattern>/deposit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>withdrawl</servlet-name>
+		<url-pattern>/withdrawl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>transfer</servlet-name>
+		<url-pattern>/transfer</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Accountinfo</servlet-name>
+		<url-pattern>/Accountinfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>close</servlet-name>
+		<url-pattern>/close</url-pattern>
+	</servlet-mapping>
+	 
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
